@@ -1,483 +1,333 @@
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100,300;400;500;700&display=swap');
-            @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
-            @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Courgette&family=Pacifico&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,700;0,800;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600&family=Raleway:wght@100;200;300;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Courgette&family=Kaushan+Script&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600&family=Raleway:wght@100;200;300;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
-             :root {
-                --text-color-1: rgba(3, 0, 0, 0.589);
-                --text-color-2: rgb(255, 84, 5);
-                --text-color-3: rgb(219, 212, 212);
-                --background-color-1: rgba(255, 82, 2, 0.589);
-                --background-color-2: rgb(0, 0, 0);
-                --background-color-3: rgb(255, 254, 254);
-                ;
-            }
-            
-            * {
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                outline: none;
-                border: none;
-                text-decoration: none;
-                text-transform: capitalize;
-                transition: all .2s linear;
-                line-height: 1.5;
-            }
-            
-            html {
-                font-size: 62.5%;
-                overflow-x: hidden;
-                scroll-behavior: smooth;
-            }
-            
-            body {
-                background-color: var(--background-color-3);
-                padding-left: 30rem;
-            }
-            /*menu css start here*/
-            
-            header {
-                position: fixed;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                background: var(--background-color-2);
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                z-index: 1000;
-                flex-flow: column;
-                padding: 8rem 2rem;
-                width: 30rem;
-                text-align: center;
-            }
-            
-            header .logo {
-                font-family: 'Playfair Display';
-                font-size: 18px;
-                color: white;
-                font-size: 3rem;
-                font-weight: bolder;
-            }
-            
-            header .logo span {
-                font-family: 'Kaushan Script', cursive;
-                font-family: 20px;
-                text-transform: uppercase;
-                color: var(--text-color-2);
-                transition: 1s;
-            }
-            
-            header .logo span:hover {
-                color: rgb(185, 114, 8);
-                font-size: 35px;
-            }
-            
-            header .navbar a {
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                display: block;
-                font-size: 2rem;
-                color: white;
-                margin: 2rem 0;
-                transition: .5s;
-            }
-            
-            header .navbar a:hover {
-                font-size: 2.5rem;
-                font-weight: 200;
-                letter-spacing: .4rem;
-                color: var(--text-color-2);
-                text-transform: uppercase;
-                opacity: .5;
-            }
-            
-            header .navbar a:active {
-                color: yellow;
-                background: rgba(179, 110, 6, 0);
-                border-bottom-right-radius: .5px;
-                border-right-style: groove;
-                border-bottom-style: groove;
-                border-color: var(--background-color-1);
-            }
-            
-            header .follow {
-                font-size: 2rem;
-                color: white;
-                margin: 0 .7rem;
-                word-spacing: 10px;
-            }
-            
-            header .follow a:hover {
-                color: var(--text-color-2);
-            }
-            
-            #menu-bars {
-                position: fixed;
-                top: 1rem;
-                right: 1rem;
-                z-index: 10000;
-                background: var(--background-color-1);
-                color: white;
-                border-radius: .5REM;
-                padding: 1rem 1.5rem;
-                font-size: 2rem;
-                cursor: pointer;
-                display: none;
-            }
-            /*menu css end here*/
-            /* Post head css from here*/
-            
-            .feature,
-            .feature-1 {
-                max-width: 100%;
-                width: 100%;
-                margin: 0;
-                padding: 0;
-                display: flex;
-            }
-            
-            .feature .left,
-            .feature-1 .left {
-                width: 75%;
-                padding: 30px;
-            }
-            
-            .feature .scroling-post {
-                width: 100%;
-                padding: 0;
-            }
-            
-            .feature .scroling-post .img-title {
-                width: 100%;
-            }
-            
-            .feature .scroling-post .title {
-                position: relative;
-                text-align: center;
-            }
-            
-            .feature .scroling-post .title a {
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                font-weight: bolder;
-                font-size: 4rem;
-                font-weight: bold;
-                color: rgb(0, 0, 0);
-                text-align: left;
-            }
-            
-            .line-devine {
-                background: red;
-                margin: 50px 150px;
-                padding: 1px;
-            }
-            
-            .feature .scroling-post .title a:hover {
-                color: rgb(233, 0, 0);
-            }
-            
-            .home-content {
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 2rem;
-                text-align: left;
-                margin: 30px;
-            }
-            
-            .read-more {
-                background: red;
-                padding: 10px 30px;
-                text-decoration: none;
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: 300;
-                margin-bottom: 50px;
-                margin-left: 600px;
-                transition: .2s;
-            }
-            
-            .read-more:hover {
-                background: rgba(255, 0, 0, 0.103);
-                color: red;
-                font-weight: 800;
-            }
-            
-            .sidebar {
-                width: 25%;
-                background-image: linear-gradient(white, rgb(202, 202, 202));
-                border-left-width: 2px;
-                border-left-color: rgba(170, 166, 166, 0.164);
-                border-left-style: groove;
-                box-shadow: 0 10px 10px rgba(194, 190, 190, 0.938);
-                padding: 30px;
-                margin: 30px;
-            }
-            
-            .head-box {
-                padding: 100px;
-                text-align: center;
-                background-image: url(images/bible1.webp);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-            }
-            
-            .head-box h2 {
-                color: white;
-            }
-            /* Home Page design end here*/
-            /*article design start here */
-            
-            .article {
-                background: rgb(244, 245, 245);
-                padding: 50px 40px;
-            }
-            
-            .article-img {
-                width: 100%;
-                border: 2px;
-                border-color: rgb(209, 207, 207);
-                border-style: groove;
-            }
-            
-            .article-title {
-                text-align: center;
-            }
-            
-            .article-title a {
-                color: rgb(10, 2, 0);
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                Font-size: 6rem;
-                font-weight: 800;
-                width: 100%;
-                text-align: center;
-                transition: 0.5s;
-            }
-            
-            .article-title a:hover {
-                color: red;
-            }
-            
-            .article-content {
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 2rem;
-                text-align: justify;
-                margin: 50px;
-                white-space: 0;
-            }
-            
-            .sub-content-heading {
-                color: red;
-                font-size: 2.5rem;
-                font-weight: 700px;
-            }
-            /*article design end here */
-            /*devotion html design start here */
-            
-            .devotion-box {
-                padding: 100px;
-                text-align: center;
-                background-image: url(images/devotion1.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: right;
-            }
-            
-            .devotion-box h2 {
-                color: white;
-            }
-            
-            .two-column {
-                max-width: 100%;
-                display: flex;
-                margin-bottom: 50px;
-            }
-            
-            .col1 {
-                width: 50%;
-            }
-            
-            .two-column .col1 .scroling-post .title a,
-            .two-column .col2 .scroling-post .title a {
-                font-size: 3rem;
-                color: rgb(190, 3, 3);
-                padding: 20px;
-            }
-            
-            .two-column .col1 .scroling-post .title a:hover,
-            .two-column .col2 .scroling-post .title a:hover {
-                color: rgb(17, 0, 0);
-            }
-            
-            .two-column .col1 .scroling-post .home-content,
-            .two-column .col2 .scroling-post .home-content {
-                font-size: 2rem;
-                color: rgb(7, 0, 0);
-                padding: 20px;
-                text-align: justify;
-            }
-            
-            .col2 {
-                width: 50%;
-            }
-            
-            .devotion-line {
-                background: red;
-                margin: 300px 2px;
-                padding: 1px;
-            }
-            
-            .col-read {
-                background: red;
-                padding: 10px 30px;
-                text-decoration: none;
-                color: white;
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: 300;
-                margin-bottom: 50px;
-                margin-left: 80px;
-                transition: .2s;
-            }
-            
-            .col-read:hover {
-                background: rgba(255, 0, 0, 0.103);
-                color: red;
-                font-weight: 800;
-            }
-            /*devotion html design end here */
-            /*media queries */
-            
-            @media (max-width: 1080px) {
-                html {
-                    font-size: 55%;
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100,300;400;500;700&display=swap');
+                @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+                @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Courgette&family=Pacifico&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,700;0,800;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600&family=Raleway:wght@100;200;300;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Courgette&family=Kaushan+Script&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600&family=Raleway:wght@100;200;300;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+                 :root {
+                    --text-color-1: rgba(3, 0, 0, 0.589);
+                    --text-color-2: rgb(255, 84, 5);
+                    --text-color-3: rgb(219, 212, 212);
+                    --background-color-1: rgba(255, 82, 2, 0.589);
+                    --background-color-2: rgb(0, 0, 0);
+                    --background-color-3: rgb(255, 254, 254);
+                    ;
                 }
-                body {
+                
+                * {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    margin: 0;
                     padding: 0;
+                    box-sizing: border-box;
+                    outline: none;
+                    border: none;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    transition: all .2s linear;
+                    line-height: 1.5;
                 }
-                #menu-bars {
-                    display: initial;
+                
+                html {
+                    font-size: 62.5%;
+                    overflow-x: hidden;
+                    scroll-behavior: smooth;
                 }
+                
+                body {
+                    background-color: var(--background-color-3);
+                    padding-left: 30rem;
+                }
+                /*menu css start here*/
+                
                 header {
-                    left: -120%;
-                    transition: .7s;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    background: var(--background-color-2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    z-index: 1000;
+                    flex-flow: column;
+                    padding: 8rem 2rem;
+                    width: 30rem;
+                    text-align: center;
                 }
-                header.active {
-                    left: 0%;
+                
+                header .logo {
+                    font-family: 'Playfair Display';
+                    font-size: 18px;
+                    color: white;
+                    font-size: 3rem;
+                    font-weight: bolder;
                 }
+                
+                header .logo span {
+                    font-family: 'Kaushan Script', cursive;
+                    font-family: 20px;
+                    text-transform: uppercase;
+                    color: var(--text-color-2);
+                    transition: 1s;
+                }
+                
+                header .logo span:hover {
+                    color: rgb(185, 114, 8);
+                    font-size: 35px;
+                }
+                
+                header .navbar a {
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    display: block;
+                    font-size: 2rem;
+                    color: white;
+                    margin: 2rem 0;
+                    transition: .5s;
+                }
+                
+                header .navbar a:hover {
+                    font-size: 2.5rem;
+                    font-weight: 200;
+                    letter-spacing: .4rem;
+                    color: var(--text-color-2);
+                    text-transform: uppercase;
+                    opacity: .5;
+                }
+                
+                header .navbar a:active {
+                    color: yellow;
+                    background: rgba(179, 110, 6, 0);
+                    border-bottom-right-radius: .5px;
+                    border-right-style: groove;
+                    border-bottom-style: groove;
+                    border-color: var(--background-color-1);
+                }
+                
+                header .follow {
+                    font-size: 2rem;
+                    color: white;
+                    margin: 0 .7rem;
+                    word-spacing: 10px;
+                }
+                
+                header .follow a:hover {
+                    color: var(--text-color-2);
+                }
+                
+                #menu-bars {
+                    position: fixed;
+                    top: 1rem;
+                    right: 1rem;
+                    z-index: 10000;
+                    background: var(--background-color-1);
+                    color: white;
+                    border-radius: .5REM;
+                    padding: 1rem 1.5rem;
+                    font-size: 2rem;
+                    cursor: pointer;
+                    display: none;
+                }
+                /*menu css end here*/
+                /* Post head css from here*/
+                
                 .feature,
                 .feature-1 {
-                    display: block;
-                    background: black;
+                    max-width: 100%;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
                 }
+                
                 .feature .left,
                 .feature-1 .left {
+                    width: 75%;
+                    padding: 30px;
+                }
+                
+                .feature .scroling-post {
                     width: 100%;
-                    padding: 50px 30px;
-                    height: 75%;
+                    padding: 0;
                 }
-                .article-title a {
-                    color: white;
-                    font-size: 4rem;
+                
+                .feature .scroling-post .img-title {
+                    width: 100%;
+                }
+                
+                .feature .scroling-post .title {
+                    position: relative;
                     text-align: center;
-                    padding: 20px 0;
                 }
-                .article-content {
-                    color: rgb(163, 159, 159);
+                
+                .feature .scroling-post .title a {
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-weight: bolder;
+                    font-size: 4rem;
+                    font-weight: bold;
+                    color: rgb(0, 0, 0);
+                    text-align: left;
+                }
+                
+                .line-devine {
+                    background: red;
+                    margin: 50px 150px;
+                    padding: 1px;
+                }
+                
+                .feature .scroling-post .title a:hover {
+                    color: rgb(233, 0, 0);
+                }
+                
+                .home-content {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-size: 2rem;
                     text-align: left;
-                    cursor: pointer;
+                    margin: 30px;
                 }
-                .article-img {
-                    width: 100%;
-                    border: 2px;
-                    border-color: rgb(49, 47, 47);
-                    border-style: none;
-                    border-radius: 0;
-                    box-shadow: none;
-                    margin-top: 0;
-                    transition: 0.5s;
-                }
-                .article-img:hover {
-                    width: 105%;
-                }
-                header {
-                    background: linear-gradient( rgba(114, 54, 5, 0.425), black);
-                }
-                /*home mobile css start here*/
-                .feature .scroling-post .title a {
-                    font-size: 5rem;
-                    color: rgb(197, 196, 194);
-                }
-                .line-devine {
-                    margin: 50px 100px;
-                }
-                .feature .scroling-post .title a:hover {
-                    color: rgb(255, 5, 5);
-                }
-                .home-content {
-                    color: white;
-                }
+                
                 .read-more {
                     background: red;
                     padding: 10px 30px;
                     text-decoration: none;
                     color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 300;
                     margin-bottom: 50px;
-                    margin-left: 300px;
+                    margin-left: 600px;
                     transition: .2s;
                 }
+                
                 .read-more:hover {
+                    background: rgba(255, 0, 0, 0.103);
                     color: red;
                     font-weight: 800;
-                    border-color: white;
-                    border-width: 2px;
+                }
+                
+                .sidebar {
+                    width: 25%;
+                    background-image: linear-gradient(white, rgb(202, 202, 202));
+                    border-left-width: 2px;
+                    border-left-color: rgba(170, 166, 166, 0.164);
+                    border-left-style: groove;
+                    box-shadow: 0 10px 10px rgba(194, 190, 190, 0.938);
+                    padding: 30px;
+                    margin: 30px;
+                }
+                
+                .head-box {
+                    padding: 100px;
+                    text-align: center;
+                    background-image: url(images/bible1.webp);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                
+                .head-box h2 {
+                    color: white;
+                }
+                /* Home Page design end here*/
+                /*article design start here */
+                
+                .article {
+                    background: rgb(244, 245, 245);
+                    padding: 50px 40px;
+                }
+                
+                .article-img {
+                    width: 100%;
+                    border: 2px;
+                    border-color: rgb(209, 207, 207);
                     border-style: groove;
                 }
-                /* devotion mobile content design start here*/
+                
+                .article-title {
+                    text-align: center;
+                }
+                
+                .article-title a {
+                    color: rgb(10, 2, 0);
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    Font-size: 6rem;
+                    font-weight: 800;
+                    width: 100%;
+                    text-align: center;
+                    transition: 0.5s;
+                }
+                
+                .article-title a:hover {
+                    color: red;
+                }
+                
+                .article-content {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 2rem;
+                    text-align: justify;
+                    margin: 50px;
+                    white-space: 0;
+                }
+                
+                .sub-content-heading {
+                    color: red;
+                    font-size: 2.5rem;
+                    font-weight: 700px;
+                }
+                /*article design end here */
+                /*devotion html design start here */
+                
+                .devotion-box {
+                    padding: 100px;
+                    text-align: center;
+                    background-image: url(images/devotion1.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: right;
+                }
+                
+                .devotion-box h2 {
+                    color: white;
+                }
+                
                 .two-column {
                     max-width: 100%;
-                    display: block;
-                    margin-bottom: 20px;
+                    display: flex;
+                    margin-bottom: 50px;
                 }
-                .col1,
-                .col2 {
-                    width: 100%;
-                    background: rgba(10, 1, 1, 0.205);
-                    margin-bottom: 15px;
-                    padding-bottom: 50px;
+                
+                .col1 {
+                    width: 50%;
                 }
-                .col1 .scroling-post,
-                .col2 .scroling-post {
-                    border-style: groove;
-                    border-width: 4px;
-                    border-color: rgb(124, 124, 122);
-                }
+                
                 .two-column .col1 .scroling-post .title a,
                 .two-column .col2 .scroling-post .title a {
                     font-size: 3rem;
                     color: rgb(190, 3, 3);
                     padding: 20px;
                 }
+                
                 .two-column .col1 .scroling-post .title a:hover,
                 .two-column .col2 .scroling-post .title a:hover {
-                    color: rgb(243, 243, 243);
+                    color: rgb(17, 0, 0);
                 }
+                
                 .two-column .col1 .scroling-post .home-content,
                 .two-column .col2 .scroling-post .home-content {
-                    font-size: 1.8rem;
-                    color: rgb(235, 229, 229);
-                    padding: 2px 5px;
-                    text-align: left;
+                    font-size: 2rem;
+                    color: rgb(7, 0, 0);
+                    padding: 20px;
+                    text-align: justify;
                 }
+                
+                .col2 {
+                    width: 50%;
+                }
+                
                 .devotion-line {
-                    display: none;
+                    background: red;
+                    margin: 300px 2px;
+                    padding: 1px;
                 }
-                /*.devotion-line {
-            background: red;
-            margin: 20px 2px;
-            padding: 1px;
-        }*/
+                
                 .col-read {
                     background: red;
                     padding: 10px 30px;
@@ -489,19 +339,328 @@
                     margin-left: 80px;
                     transition: .2s;
                 }
+                
                 .col-read:hover {
                     background: rgba(255, 0, 0, 0.103);
                     color: red;
                     font-weight: 800;
                 }
-                /* devotion mobile content design end here*/
-                /* mobile sidebar design start here*/
-                .sidebar {
-                    width: 100%;
-                    background-color: rgb(255, 255, 255);
-                    padding: 30px 0;
-                    text-align: center;
-                    box-shadow: none;
-                    /* mobile sidebar design end here*/
+                /*devotion html design end here */
+                /*media queries */
+                
+                @media (max-width: 1080px) {
+                    html {
+                        font-size: 55%;
+                    }
+                    body {
+                        padding: 0;
+                    }
+                    #menu-bars {
+                        display: initial;
+                    }
+                    header {
+                        left: -120%;
+                        transition: .7s;
+                    }
+                    header.active {
+                        left: 0%;
+                    }
+                    .feature,
+                    .feature-1 {
+                        display: block;
+                        background: black;
+                    }
+                    .feature .left,
+                    .feature-1 .left {
+                        width: 100%;
+                        padding: 50px 30px;
+                        height: 75%;
+                    }
+                    .article-title a {
+                        color: white;
+                        font-size: 4rem;
+                        text-align: center;
+                        padding: 20px 0;
+                    }
+                    .article-content {
+                        color: rgb(163, 159, 159);
+                        font-size: 2rem;
+                        text-align: left;
+                        cursor: pointer;
+                    }
+                    .article-img {
+                        width: 100%;
+                        border: 2px;
+                        border-color: rgb(49, 47, 47);
+                        border-style: none;
+                        border-radius: 0;
+                        box-shadow: none;
+                        margin-top: 0;
+                        transition: 0.5s;
+                    }
+                    .article-img:hover {
+                        width: 105%;
+                    }
+                    header {
+                        background: linear-gradient( rgba(114, 54, 5, 0.425), black);
+                    }
+                    /*home mobile css start here*/
+                    .feature .scroling-post .title a {
+                        font-size: 5rem;
+                        color: rgb(197, 196, 194);
+                    }
+                    .line-devine {
+                        margin: 50px 100px;
+                    }
+                    .feature .scroling-post .title a:hover {
+                        color: rgb(255, 5, 5);
+                    }
+                    .home-content {
+                        color: white;
+                    }
+                    .read-more {
+                        background: red;
+                        padding: 10px 30px;
+                        text-decoration: none;
+                        color: white;
+                        margin-bottom: 50px;
+                        margin-left: 300px;
+                        transition: .2s;
+                    }
+                    .read-more:hover {
+                        color: red;
+                        font-weight: 800;
+                        border-color: white;
+                        border-width: 2px;
+                        border-style: groove;
+                    }
+                    /* devotion mobile content design start here*/
+                    .two-column {
+                        max-width: 100%;
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+                    .col1,
+                    .col2 {
+                        width: 100%;
+                        background: rgba(10, 1, 1, 0.205);
+                        margin-bottom: 15px;
+                        padding-bottom: 50px;
+                    }
+                    .col1 .scroling-post,
+                    .col2 .scroling-post {
+                        border-style: groove;
+                        border-width: 4px;
+                        border-color: rgb(124, 124, 122);
+                    }
+                    .two-column .col1 .scroling-post .title a,
+                    .two-column .col2 .scroling-post .title a {
+                        font-size: 3rem;
+                        color: rgb(190, 3, 3);
+                        padding: 20px;
+                    }
+                    .two-column .col1 .scroling-post .title a:hover,
+                    .two-column .col2 .scroling-post .title a:hover {
+                        color: rgb(243, 243, 243);
+                    }
+                    .two-column .col1 .scroling-post .home-content,
+                    .two-column .col2 .scroling-post .home-content {
+                        font-size: 1.8rem;
+                        color: rgb(235, 229, 229);
+                        padding: 2px 5px;
+                        text-align: left;
+                    }
+                    .devotion-line {
+                        display: none;
+                    }
+                    /*.devotion-line {
+            background: red;
+            margin: 20px 2px;
+            padding: 1px;
+        }*/
+                    .col-read {
+                        background: red;
+                        padding: 10px 30px;
+                        text-decoration: none;
+                        color: white;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: 300;
+                        margin-bottom: 50px;
+                        margin-left: 80px;
+                        transition: .2s;
+                    }
+                    .col-read:hover {
+                        background: rgba(255, 0, 0, 0.103);
+                        color: red;
+                        font-weight: 800;
+                    }
+                    /* devotion mobile content design end here*/
+                    /* mobile sidebar design start here*/
+                    .sidebar {
+                        width: 100%;
+                        background-color: rgb(255, 255, 255);
+                        padding: 30px 0;
+                        text-align: center;
+                        box-shadow: none;
+                        /* mobile sidebar design end here*/
+                    }
                 }
-            }
+                /*@ SMALL MEDIA DESIGN*/
+                
+                @media (max-width: 600px) {
+                    html {
+                        font-size: 55%;
+                    }
+                    body {
+                        padding: 0;
+                    }
+                    #menu-bars {
+                        display: initial;
+                    }
+                    header {
+                        left: -120%;
+                        transition: .7s;
+                    }
+                    header.active {
+                        left: 0%;
+                    }
+                    .feature,
+                    .feature-1 {
+                        display: block;
+                        background: black;
+                    }
+                    .feature .left,
+                    .feature-1 .left {
+                        width: 100%;
+                        padding: 50px 30px;
+                        height: 75%;
+                    }
+                    .article-title a {
+                        color: white;
+                        font-size: 4rem;
+                        text-align: center;
+                        padding: 20px 0;
+                    }
+                    .article-content {
+                        color: rgb(163, 159, 159);
+                        font-size: 2rem;
+                        text-align: left;
+                        cursor: pointer;
+                    }
+                    .article-img {
+                        width: 100%;
+                        border: 2px;
+                        border-color: rgb(49, 47, 47);
+                        border-style: none;
+                        border-radius: 0;
+                        box-shadow: none;
+                        margin-top: 0;
+                        transition: 0.5s;
+                    }
+                    .article-img:hover {
+                        width: 105%;
+                    }
+                    header {
+                        background: linear-gradient( rgba(114, 54, 5, 0.425), black);
+                    }
+                    /*home mobile css start here*/
+                    .feature .scroling-post .title a {
+                        font-size: 5rem;
+                        color: rgb(197, 196, 194);
+                    }
+                    .line-devine {
+                        margin: 50px 100px;
+                    }
+                    .feature .scroling-post .title a:hover {
+                        color: rgb(255, 5, 5);
+                    }
+                    .home-content {
+                        color: white;
+                    }
+                    .read-more {
+                        background: red;
+                        padding: 10px 30px;
+                        text-decoration: none;
+                        color: white;
+                        margin-bottom: 50px;
+                        margin-left: 300px;
+                        transition: .2s;
+                    }
+                    .read-more:hover {
+                        color: red;
+                        font-weight: 800;
+                        border-color: white;
+                        border-width: 2px;
+                        border-style: groove;
+                    }
+                    /* devotion mobile content design start here*/
+                    .two-column {
+                        max-width: 100%;
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+                    .col1,
+                    .col2 {
+                        width: 100%;
+                        background: rgba(10, 1, 1, 0.205);
+                        margin-bottom: 15px;
+                        padding-bottom: 50px;
+                    }
+                    .col1 .scroling-post,
+                    .col2 .scroling-post {
+                        border-style: groove;
+                        border-width: 4px;
+                        border-color: rgb(124, 124, 122);
+                    }
+                    .two-column .col1 .scroling-post .title a,
+                    .two-column .col2 .scroling-post .title a {
+                        font-size: 3rem;
+                        color: rgb(190, 3, 3);
+                        padding: 20px;
+                    }
+                    .two-column .col1 .scroling-post .title a:hover,
+                    .two-column .col2 .scroling-post .title a:hover {
+                        color: rgb(243, 243, 243);
+                    }
+                    .two-column .col1 .scroling-post .home-content,
+                    .two-column .col2 .scroling-post .home-content {
+                        font-size: 1.8rem;
+                        color: rgb(235, 229, 229);
+                        padding: 2px 5px;
+                        text-align: left;
+                    }
+                    .devotion-line {
+                        display: none;
+                    }
+                    /*.devotion-line {
+            background: red;
+            margin: 20px 2px;
+            padding: 1px;
+        }*/
+                    .col-read {
+                        background: red;
+                        padding: 10px 30px;
+                        text-decoration: none;
+                        color: white;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: 300;
+                        margin-bottom: 50px;
+                        margin-left: 80px;
+                        transition: .2s;
+                    }
+                    .col-read:hover {
+                        background: rgba(255, 0, 0, 0.103);
+                        color: red;
+                        font-weight: 800;
+                    }
+                    /* devotion mobile content design end here*/
+                    /* mobile sidebar design start here*/
+                    .sidebar {
+                        width: 100%;
+                        background-color: rgb(255, 255, 255);
+                        padding: 30px 0;
+                        text-align: center;
+                        box-shadow: none;
+                        /* mobile sidebar design end here*/
+                    }
+                }
