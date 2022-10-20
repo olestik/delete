@@ -45,6 +45,8 @@
      align-items: center;
      justify-content: center;
      box-shadow: 5px 5px 20px black;
+     z-index: 200;
+     position: fixed;
  }
  /*menu side 1*/
  
