@@ -34,6 +34,7 @@
  
  body {
      background-color: var(--background-color-3);
+     max-width: 100%;
  }
  /*Head menu design start here*/
  
@@ -216,10 +217,9 @@
  
  .feature,
  .feature-1 {
-     max-width: 100%;
      width: 100%;
      margin: 0;
-     padding: 0;
+     padding: 0 30px;
      display: flex;
  }
  
@@ -236,6 +236,9 @@
  
  .feature .scroling-post .img-title {
      width: 100%;
+     border: 5px;
+     border-style: groove;
+     border-color: rgba(189, 162, 87, 0.603);
  }
  
  .feature .scroling-post .title {
@@ -270,6 +273,7 @@
  }
  
  .read-more {
+     width: 100%;
      background: red;
      padding: 10px 30px;
      text-decoration: none;
@@ -277,7 +281,8 @@
      font-family: Arial, Helvetica, sans-serif;
      font-weight: 300;
      margin-bottom: 50px;
-     margin-left: 600px;
+     align-items: center;
+     justify-items: center;
      transition: .2s;
  }
  
@@ -505,7 +510,8 @@
          color: red;
      }
      #menu-bars {
-         display: initial;
+         display: flex;
+         position: fixed;
      }
      header {
          left: -120%;
@@ -573,7 +579,6 @@
          text-decoration: none;
          color: white;
          margin-bottom: 50px;
-         margin-left: 300px;
          transition: .2s;
      }
      .read-more:hover {
