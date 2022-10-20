@@ -1,4 +1,5 @@
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100,300;400;500;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Molle&family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Roboto+Slab:wght@100;200;400;500;600;700;800;900&display=swap');
  @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
  @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Courgette&family=Pacifico&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,700;0,800;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600&family=Raleway:wght@100;200;300;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Courgette&family=Kaushan+Script&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600&family=Raleway:wght@100;200;300;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
@@ -33,11 +34,95 @@
  
  body {
      background-color: var(--background-color-3);
-     padding-left: 30rem;
+ }
+ /*Head menu design start here*/
+ 
+ .my-menu {
+     width: 100%;
+     background: rgb(255, 255, 255);
+     display: flex;
+     padding: 20px;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 5px 5px 20px black;
+ }
+ /*menu side 1*/
+ 
+ .my-menu .side-1 {
+     width: 40%;
+     text-align: right;
+     padding-right: 30px;
+ }
+ 
+ .my-menu .side-1 a {
+     color: rgb(37, 37, 37);
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-weight: 400;
+     font-size: 2rem;
+     padding-right: 35px;
+     transition: .5s;
+ }
+ 
+ .my-menu .side-1 a:hover {
+     color: black;
+     font-weight: 700;
+     font-size: 1.5rem;
+     padding: 10px;
+ }
+ /*menu center*/
+ 
+ .my-menu .center-logo {
+     width: 20%;
+     text-align: center;
+ }
+ 
+ .my-menu .center-logo {
+     font-family: 'Luckiest Guy', cursive;
+     font-size: 3rem;
+     transition: .3s;
+ }
+ 
+ .my-menu .center-logo span {
+     font-family: 'Playfair Display', serif;
+     font-weight: 600;
+     color: rgb(199, 5, 5);
+     font-size: 2.5rem;
+ }
+ 
+ .my-menu .center-logo:hover {
+     font-size: 2rem;
+ }
+ 
+ .my-menu .center-logo span:hover {
+     color: rgb(248, 4, 4);
+     font-size: 2.5rem;
  }
  
  .header-menu-logo {
      display: none;
+ }
+ /*menu side 2*/
+ 
+ .my-menu .side-2 {
+     width: 40%;
+     text-align: left;
+     padding-left: 30px;
+ }
+ 
+ .my-menu .side-2 a {
+     color: rgb(37, 37, 37);
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-weight: 400;
+     font-size: 2rem;
+     padding-right: 35px;
+     transition: .5s;
+ }
+ 
+ .my-menu .side-2 a:hover {
+     color: black;
+     font-weight: 700;
+     font-size: 1.5rem;
+     padding: 10px;
  }
  /*menu css start here*/
  
@@ -47,7 +132,7 @@
      left: 0;
      bottom: 0;
      background: var(--background-color-2);
-     display: flex;
+     display: none;
      align-items: center;
      justify-content: space-between;
      z-index: 1000;
@@ -76,6 +161,10 @@
  header .logo span:hover {
      color: rgb(185, 114, 8);
      font-size: 35px;
+ }
+ 
+ header .navbar {
+     margin: 80px 0;
  }
  
  header .navbar a {
@@ -107,24 +196,13 @@
      border-color: var(--background-color-1);
  }
  
- header .follow {
-     font-size: 2rem;
-     color: white;
-     margin: 0 .7rem;
-     word-spacing: 10px;
- }
- 
- header .follow a:hover {
-     color: var(--text-color-2);
- }
- 
  #menu-bars {
      position: fixed;
      top: 1rem;
      right: 1rem;
      z-index: 10000;
-     background: var(--background-color-1);
-     color: white;
+     background: var(--background-color-2);
+     color: rgb(207, 203, 203);
      border-radius: .5REM;
      padding: 1rem 1.5rem;
      font-size: 2rem;
@@ -374,7 +452,7 @@
  /*devotion html design end here */
  /*media queries */
  
- @media (max-width: 720px) {
+ @media (max-width: 1080px) {
      html {
          font-size: 55%;
      }
@@ -383,22 +461,46 @@
          margin: 0;
          max-width: 100%;
      }
-     .header-menu-logo {
+     .my-menu {
+         display: none;
+     }
+     header {
          display: flex;
-         position: relative;
+         background: var(--background-color-2);
+         align-items: center;
+         justify-content: center;
+         z-index: 1000;
+         flex-flow: column;
+         padding: 10rem 2rem;
+         width: 70%;
+         text-align: center;
+     }
+     .header-menu-logo {
+         width: 100%;
+         display: flex;
+         position: fixed;
          padding: 20px;
+         z-index: 500;
          background: rgb(220, 223, 223);
      }
      .header-menu-logo a {
+         font-family: 'Luckiest Guy', cursive;
          color: rgb(238, 0, 0);
          font-weight: 800;
          font-size: 2.5rem;
          transition: 0.3s;
      }
      .header-menu-logo a:hover {
-         font-size: 2rem;
+         font-size: 3rem;
          color: black;
          scroll-behavior: auto;
+     }
+     .header-menu-logo a span {
+         font-family: 'Luckiest Guy', cursive;
+         color: black;
+     }
+     .header-menu-logo a span:hover {
+         color: red;
      }
      #menu-bars {
          display: initial;
